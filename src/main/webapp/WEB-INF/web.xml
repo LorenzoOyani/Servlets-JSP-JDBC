@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <servlet>
+        <servlet-name>HelloForm</servlet-name>
+        <servlet-class>org.servers.OTHERS.HelloForm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloForm</servlet-name>
+        <url-pattern>/HelloForm</url-pattern>
+    </servlet-mapping>
+<!--    <filter>-->
+<!--        <filter-name>LogFilter</filter-name>-->
+<!--        <filter-class>org.servers.LogFilter</filter-class>-->
+<!--        <init-param>-->
+<!--            <param-name>test-param</param-name>-->
+<!--            <param-value>Init parameters</param-value>-->
+<!--        </init-param>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>LogFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+    <!-- multiple filters -->
+    <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+        <servlet-class>org.servers.OTHERS.ErrorHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/ErrorHandler</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorHandler</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/ErrorHandler</location>
+    </error-page>
+    <!-- ReadCookie servlet names, classes and mappings -->
+    <servlet>
+        <servlet-name>ReadCookie</servlet-name>
+        <servlet-class>org.servers.OTHERS.ReadCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadCookie</servlet-name>
+        <url-pattern>/ReadCookie</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCookie</servlet-name>
+        <servlet-class>org.servers.OTHERS.DeleteCookie</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteCookie</servlet-name>
+        <url-pattern>/DeleteCookie</url-pattern>
+    </servlet-mapping>
+
+
+
+
+</web-app>

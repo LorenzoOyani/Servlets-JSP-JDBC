@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/2483309c-b5fc-4240-a787-75556b25ba9f/console.sql" dialect="PostgreSQL" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/2483309c-b5fc-4240-a787-75556b25ba9f/console_1.sql" dialect="PostgreSQL" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/61939976-9b53-4a4a-a6ef-4766c746258d/console.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/OTHERS/JDBC.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/DatabaseAccess.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/InsertImageToDataBase.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/MoreDbQueries.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/RemoveDB.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/StoreAndRetrieve.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/TransactionManagement.java" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/servers/QUERY/newDB.java" dialect="GenericSQL" />
+  </component>
+</project>
