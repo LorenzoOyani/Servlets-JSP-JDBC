@@ -40,6 +40,7 @@ public class QuickSort {
 
 
             }
+            // search list backward!!
             while (low >= high && list[high] > pivot) {
                 high--;
             }
