@@ -13,7 +13,9 @@ import java.sql.*;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-public class Database {
+// utility class;
+
+public final class Database {
     private static final DataSource source = createDataSource();
 
 
